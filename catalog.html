@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="nav-header background-color-white">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-element"><a href="#">Информация</a></li>
+          <li class="nav-element"><a href="#">Фото и видео</a></li>
+          <li class="nav-element"><img class="logo" src="img/logo.png" width="138px" height="70px" alt="Седона"></li>
+          <li class="nav-element"><a href="#">Карта штата</a></li>
+          <li class="nav-element"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-container">
+      <form class="filters content content-color-white">
+        <div class="filter-set">
+          <h2 class="form-header">Инфраструктура</h2>
+          <label for="pool-checkbox">Бассейн</label>
+          <input type="checkbox" name="pool-checkbox" checked>
+
+          <label for="parking-checkbox">Парковка</label>
+          <input type="checkbox" name="parking-checkbox">
+
+          <label for="wi-fi-checkbox">Wi-fi</label>
+          <input type="checkbox" name="wi-fi-checkbox">
+        </div>
+        <div class="filter-set">
+          <h2 class="form-header">Тип жилья</h2>
+          <label for="hotel-checkbox">Гостиница</label>
+          <input type="checkbox" name="hotel-checkbox" checked>
+
+          <label for="motel-checkbox">Мотель<label>
+          <input type="checkbox" name="motel-checkbox" checked>
+
+          <label for="apartments-checkbox">Аппартаменты</label>
+          <input type="checkbox" name="apartments-checkbox" checked>
+        </div>
+        <div class="filter-set">
+          <h2 class="form-header">Стоимость в сутки (р)</h2>
+          <input type="number" name="cost-from-nubmer" placeholder="ОТ 0" min="0" max="3000">
+          <input type="number" name="cost-to-nubmer" placeholder="ДО 3000" min="0" max="3000">
+          <input type="range" name="cost-range" min="0" max="3000" value="2460">
+
+          <button class="show-bnt" type="submit">Показать</button>
+        </div>
+      </form>
+      <div class="sort-container">
+        <p>Найдено: 3 <span>Сортировка:</span></p>
+        <ul class="sort-inline">
+          <li><span class="sort-selected">По цене</span></li>
+          <li><a class="dotted" href="#">По типу</a></li>
+          <li><a class="dotted" href="#">По рейтингу</a></li>
+          <li><a class="sort-ascending" href="#"></a></li>
+          <li><span class="sort-descending-selected"></span></li>
+        </ul>
+      </div>
+      <div class="search-results">
+        <div class="result">
+          <div class="result-image-left">
+            <img src="img/ars.jpg" width="135px" height="90px" alt="Amara resort & SPA">
+          </div>
+          <div class="result-description-right">
+            <div class="result-name">
+              <h2>Amara resort &amp; SPA</h2>
+            </div>
+            <div class="container result-description">
+              <span class="">Гостиница</span><span>От 3500 р.</span>
+            </div>
+            <div>
+              <div class="result-btns content-color-white">
+                <a class="background-color-blue" href="#">Подробнее</a>
+                <a class="background-color-brown" href="#">Забронировать</a>
+              </div>
+              <div class="container background-color-gray">
+                <span class="digit-raiting">Рейтинг: 8,5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="result-image-left">
+            <img src="img/dqi.jpg" width="135px" height="90px" alt="Desert Quail Inn">
+          </div>
+          <div class="result-description-right">
+            <div class="result-name">
+              <h2>Desert Quail Inn</h2>
+            </div>
+            <div class="container result-description">
+              <span class="">Мотель</span><span>От 2000 р.</span>
+            </div>
+            <div>
+              <div class="result-btns content-color-white">
+                <a class="background-color-blue" href="#">Подробнее</a>
+                <a class="background-color-brown" href="#">Забронировать</a>
+              </div>
+              <div class="container background-color-gray">
+                <span class="digit-raiting">Рейтинг: 8,9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="result-image-left">
+            <img src="img/vapd.jpg" width="135px" height="90px" alt="Villas at Poco Diablo">
+          </div>
+          <div class="result-description-right">
+            <div class="result-name">
+              <h2>Villas at Poco Diablo</h2>
+            </div>
+            <div class="container result-description">
+              <span class="">Апартаменты</span><span>От 4000 р.</span>
+            </div>
+            <div>
+              <div class="result-btns content-color-white">
+                <a class="background-color-blue" href="#">Подробнее</a>
+                <a class="background-color-brown" href="#">Забронировать</a>
+              </div>
+              <div class="container background-color-gray">
+                <span class="digit-raiting">Рейтинг: 9,2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container background-color-white">
+      <div class="hashtag content-color-black">
+        <p>#VISITSEDONA</p>
+      </div>
+      <div class="social">
+        <a href="http://www.twitter.com"><img src="img/twitter.svg" width="46px" height="48px" alt="twitter.com"></a>
+        <a href="http://www.facebook.com"><img src="img/facebook.svg" width="46px" height="48px" alt="facebook.com"></a>
+        <a href="http://www.youtube.com"><img src="img/youtube.svg" width="46px" height="48px" alt="youtube.com"></a>
+      </div>
+      <div class="designed-by">
+        <p>WEBSITE BY</p>
+        <img src="img/htmlacademy.png" width="113px" height="39px" alt="htmlacademy">
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

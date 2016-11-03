@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <div class="page">
+    <header class="nav-header background-color-white content-color-black">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-element"><a href="#">Информация</a></li>
+          <li class="nav-element"><a href="#">Фото и видео</a></li>
+          <li class="nav-element"><img class="logo" src="img/logo.png" width="138px" height="70px" alt="Седона"></li>
+          <li class="nav-element"><a href="#">Карта штата</a></li>
+          <li class="nav-element"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-container">
+      <div class="cap-image">
+        <img src="img/intro.png" width="1200px" height="780px" alt="Welcome to Sedona">
+      </div>
+      <div class="container background-color-white">
+        <h1 class="header-container paramount-h content-color-black">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="content-color-lightblack">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <div class="container">
+        <div class="content-color-white background-color-blue content-title-left">
+          <h2 class="header-container secondary-h ">Настоящий городок</h2>
+          <p>-№1-</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="content-image-right">
+          <img src="img/city.jpg" width="800px" height="256px" alt="Город Седона">
+        </div>
+      </div>
+      <div class="container content-color-black background-color-white">
+        <div>
+          <img src="img/housing.svg" width="75px" height="72px">
+          <h2 class="header-container secondary-h">Жилье</h2>
+          <p class="content-color-lightblack">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div>
+          <img src="img/food.svg" width="74px" height="70px">
+          <h2 class="header-container secondary-h">Еда</h2>
+          <p class="content-color-lightblack">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        </div>
+        <div>
+          <img src="img/souvenirs.svg" width="64px" height="76px">
+          <h2 class="header-container secondary-h">Сувениры</h2>
+          <p class="content-color-lightblack">Не только китайского, но и местного производства!</p>
+        </div>
+      </div>
+      <div class="container content-color-white background-color-blue">
+        <div>
+          <img src="img/bridge.jpg" width="800px" height="256px" alt="Мост Дьявола">
+        </div>
+        <div>
+          <h2 class="header-container secondary-h">Там есть мост дьявола</h2>
+          <p>-№2-</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
+      <div class="container content-color-black background-color-gray">
+        <div>
+          <h2 class="header-container secondary-h">Небольшая площадь</h2>
+          <p class="content-color-lightblack">-№3-</p>
+          <p class="content-color-lightblack">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div>
+          <h2 class="header-container secondary-h">Красивая дорога</h2>
+          <p class="content-color-lightblack">-№4-</p>
+          <p class="content-color-lightblack">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div>
+          <h2 class="header-container secondary-h">Мало туристов</h2>
+          <p class="content-color-lightblack">-№5-</p>
+          <p class="content-color-lightblack">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>
+      <div class="bottom-container background-color-white">
+        <h2 class="bc-header content-color-black">Заинтересовались ?</h2>
+        <p class="bc-description content-color-lightblack">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <div class="btn-container">
+          <button class="open-modal-btn" type="button">Поиск</button>
+        </div>
+      </div>
+      <form class="modal" hidden>
+        <div class="modal-header background-color-brown">
+          <h1>Поиск гостиницы в Седоне</h1>
+        </div>
+        <div class="modal-body background-color-white">
+          <label for="coming-date">Дата заезда:</label>
+          <input class="background-color-gray" type="date" name="coming-date" value="24-04-2016">
+
+          <label for="outgoing-date">Дата выезда:</label>
+          <input class="background-color-gray" type="date" name="outgoing-date" value="04-07-2016">
+
+          <label for="number-of-adults">Взрослые:</label>
+          <input class="background-color-gray" type="number" name="number-of-adults" value="2">
+
+          <label for="number-of-children">Дети:</label>
+          <input class="background-color-gray" type="number" name="number-of-adults" value="0">
+
+          <button class="search-btn background-color-blue" type="submit">Найти</button>
+        </div>
+      </form>
+      <div class="map">
+        <img src="img/map.jpg" width="1200px" height="593px" alt="Карта">
+      </div>
+    </main class="content">
+    <footer class="footer-container background-color-white transparent">
+      <div class="hashtag">
+        <p>#VISITSEDONA</p>
+      </div>
+      <div class="social">
+        <a href="http://www.twitter.com"><img src="img/twitter.svg" width="46px" height="48px" alt="twitter.com"></a>
+        <a href="http://www.facebook.com"><img src="img/facebook.svg" width="46px" height="48px" alt="facebook.com"></a>
+        <a href="http://www.youtube.com"><img src="img/youtube.svg" width="46px" height="48px" alt="youtube.com"></a>
+      </div>
+      <div class="designed-by">
+        <p>WEBSITE BY</p>
+        <img src="img/htmlacademy.png" width="113px" height="39px" alt="htmlacademy">
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

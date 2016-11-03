@@ -1,0 +1,47 @@
+body
+{
+    font-size: 14pt;
+}
+
+.container
+{
+    line-height: 21pt;
+}
+
+.result-name 
+{ 
+    font-size: 21pt;
+    line-height: 26pt;
+}
+
+.content-color-black
+{
+    font-family: ptsansbold ,'PT Sans Bold', Bold;
+    color: #000;
+}
+
+.content-color-lightblack
+{
+    font-family: ptsans, 'PT Sans Regular', Regular;
+    color: #333;
+}
+
+.content-color-white
+{
+    font-family: ptsansbold ,'PT Sans Bold', Bold;
+    color: #fff;
+}
+
+.background-color-gray {
+    background-color: #f2f2f2;
+}
+
+.background-color-blue
+{
+    background-color: #81b3d2;
+}
+
+.background-color-brown
+{
+    background-color: #766357;
+}
